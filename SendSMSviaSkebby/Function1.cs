@@ -39,7 +39,7 @@ namespace SendSMSviaSkebby
                     return (ActionResult)new OkObjectResult("Bad request - Wrong Password");
                 }
 
-                String[] auth = authenticate("a.vannini@ilgabbianoviaggi.it", "6xPeJBRdL!Hek4");
+                String[] auth = authenticate("skebbyuser", "skebbypassword");
 
                 SendSMS sendSMSRequest = new SendSMS();
 
